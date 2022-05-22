@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_0_0.dtd">
+
+
+<service-builder dependency-injector="ds" package-path="com.liferay.demo">
+
+<author>Ummed Singh</author>
+<namespace>AMF Registration</namespace>
+
+    <entity name="User" local-service="true" remote-service="true" uuid="true">
+    
+    	<column name="FirstName" type="String"></column>
+    	<column name="LastName" type="String"></column>
+    	<column name="EmailAddress" type="String"></column>
+    	<column name="Username" type="String" primary="true"></column>
+    	<column name="Male" type="String"></column>
+    	<column name="Birthday" type="int"></column>
+    	<column name="Password" type="String"></column>
+    	<column name="ConfirmPassword" type="String"></column>
+    	<column name="HomePhone" type="long"></column>
+    	<column name="MobilePhone" type="long"></column>
+    	<column name="Address1" type="String"></column>
+    	<column name="Address2" type="String"></column>
+    	<column name="City" type="String"></column>
+    	<column name="State" type="String"></column>
+    	<column name="ZipCode" type="int"></column>
+    	<column name="Security Question" type="String"></column>
+    	<column name="Answer" type="String"></column>
+    	<column name="TermsofUse" type="boolean"></column>
+
+
+    	<!-- PK fields -->
+
+    	<column name="userId" primary="true" type="long"></column>
+
+    	<!-- Group instance -->
+
+    	<column name="groupId" type="long"></column>
+
+    	<!-- Audit fields -->
+
+    	<column name="companyId" type="long"></column>
+    	<column name="userId" type="long"></column>
+    	<column name="userName" type="String"></column>
+    	<column name="createDate" type="Date"></column>
+    	<column name="modifiedDate" type="Date"></column>
+    </entity>
+</service-builder>
